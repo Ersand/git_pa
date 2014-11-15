@@ -1,0 +1,17 @@
+# do proc.do 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module proc
+# 
+# Top level modules:
+# 	proc
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module proc_vlg_vec_tst
+# 
+# Top level modules:
+# 	proc_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver -c -voptargs=\"+acc\" -t 1ps -novopt work.proc_vlg_vec_tst 
+# Loading work.proc_vlg_vec_tst
+# Loading work.proc
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# ** Note: $finish    : test_pc.vwf.vt(45)
+#    Time: 1 us  Iteration: 0  Instance: /proc_vlg_vec_tst

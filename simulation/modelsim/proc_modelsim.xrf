@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/bscuser/Desktop/git_pa/work/proc_package.vhd
+source_file = 1, C:/Users/bscuser/Desktop/git_pa/mem.vhd
+source_file = 1, C:/Users/bscuser/Desktop/git_pa/proc.vhd
+source_file = 1, C:/Users/bscuser/Desktop/git_pa/db/proc.cbx.xml
+source_file = 1, c:/users/bscuser/desktop/altera/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/users/bscuser/desktop/altera/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/users/bscuser/desktop/altera/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/users/bscuser/desktop/altera/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = proc
+instance = comp, \Clock_CI~input\, Clock_CI~input, proc, 1
+instance = comp, \Reset~input\, Reset~input, proc, 1

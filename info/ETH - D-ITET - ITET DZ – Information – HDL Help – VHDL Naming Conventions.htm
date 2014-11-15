@@ -1,0 +1,272 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2013 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+<!-- base href="http://www.dz.ee.ethz.ch/" -->
+
+
+<meta name="generator" content="TYPO3 4.5 CMS">
+
+<link rel="stylesheet" type="text/css" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/stylesheet_1cc631418d.css" media="all">
+
+
+
+<script src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/javascript_0b12553063.js" type="text/javascript"></script>
+
+
+<meta name="copyright" content="ETH Zuerich">
+	<link href="http://www.ethz.ch/" rel="home">
+	<link rel="SHORTCUT ICON" href="http://www.ethz.ch/images/favicon.ico">
+	<script type="text/javascript" language="JavaScript">
+      <!--
+        // opens a windows to change the color scheme
+        function openCenteredWindow(url, height, width, name, parms) {
+          var left = Math.floor( (screen.width - width) / 2);
+          var top = Math.floor( (screen.height - height) / 2);
+          var winParms = "top=" + top + ",left=" + left + ",height=" + height + ",width=" + width;
+          if (parms) { winParms += "," + parms; }
+            var win = window.open(url, name, winParms);
+          if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+            return win;
+        }
+        function openColorWindow() {
+          newwin = openCenteredWindow("colors.html",520,120,"ColorScheme","resizable=yes")}
+      //-->
+    </script>
+<title>ETH - D-ITET -&nbsp;ITET DZ&nbsp;–&nbsp;Information&nbsp;–&nbsp;HDL Help&nbsp;–&nbsp;VHDL Naming Conventions</title><link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/plasma_01.css" type="text/css">  <link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/styles_rte_01.css" type="text/css">    <link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/colors_c160.css" type="text/css">  <link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/ns4_01.css" type="text/css">  <link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/modernbrowsers_01.css">  <link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/colors_c160.css" type="text/css">  <link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/silva_01.css">    <link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/includehack_01.css">  <link rel="stylesheet" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/typo3_fixes_01.css">  <link rel="stylesheet" media="print" href="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/print_01.css" type="text/css">  <style type="text/css">div.navblock, .margins div.contentblock-1col { margin-bottom:165px; }</style>  <!--[if lte IE 6]><link rel='stylesheet' href='/fileadmin/ethcd/css/ie6_01.css' type='text/css' /><![endif]-->  <!--[if IE 7]><link rel='stylesheet' href='/fileadmin/ethcd/css/ie7_01.css' type='text/css' /><![endif]--><script src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/scripts_de_01.js" type="text/JavaScript"></script>
+<script src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/scripts_01.js" type="text/JavaScript"></script>
+<style type="text/css">
+.logo-bg { background-image: url(/fileadmin/ethcd/images/DZ/eth_logo.jpg); background-repeat: no-repeat; }
+.identity-image { background-image: url(/fileadmin/ethcd/images/DZ/head_bg_home.jpg); background-repeat: repeat; }
+</style>
+</head>
+<body onload="setup()" bgcolor="#FFFFFF">
+
+  <div class="margins" id="bodymargins" style="width:auto;">
+    <a id="top" name="top"></a>
+    <!-- START header table -->
+    <div id="printhead">
+      
+        <img alt="printlogo" src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/ethlogo-print.gif" height="57" width="220">
+      
+      
+    </div>
+    <table id="screenhead" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr>            
+  <td class="logo-bg" valign="top" width="220">
+              <map name="logo" id="eulogo">
+                <area shape="rect" coords="10,20,200,70" href="http://www.ethz.ch/" alt="http://www.ethz.ch/" title="ETH Zürich - Startseite">
+              </map>
+              <img usemap="#logo" alt="ETH Zuerich - Startseite" src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/transparent_01.gif" border="0" height="105" width="220">
+  </td>
+            
+  <td class="identity-image" valign="top" width="100%">
+     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <!-- head picture and language -->
+            <tbody><tr>
+              <td colspan="2" height="54" valign="bottom" width="100%">
+              <div class="sitename" id="sitename">
+<a href="http://www.dz.ee.ethz.ch/en/general-information/about.html" id="title"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/bg_header_en.png" alt="" border="0" height="54" width="340"></a>              </div>
+              </td>
+              <td class="transparent">&nbsp;</td>
+            </tr>
+<tr><td class="color4-back" height="17" valign="middle" width="100%"><div class="mainnav"><a href="http://www.dz.ee.ethz.ch/en/no_cache/general-information/news.html" class="mainnav-off">News</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/general-information/about.html" class="mainnav-off">About</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/general-information/about/staff.html" class="mainnav-off">People</a></div></td>              <td rowspan="3" class="color1-back" height="100%" width="220">
+                <!-- START service-navigation and search -->
+                <table border="0" cellpadding="0" cellspacing="0" width="220">
+                  <tbody><tr>
+                    <td height="18" valign="middle">
+<div class="servicenav"><a href="http://www.dz.ee.ethz.ch/en/general-information/about/contact-us.html" class="servicenav-off">Contact Us</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/beneficial/sitemap.html" class="servicenav-off">Sitemap</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/beneficial/help.html" class="servicenav-off">Help</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en.html" class="servicenav-off">Home</a></div>                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- START search form -->
+<div class="tx-macinasearchbox-pi1">
+		
+      <form name="search" action="en/beneficial/search.html" method="post" accept-charset="UTF-8">
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td valign="middle">
+                <input id="q" class="searchfield" name="tx_indexedsearch[sword]" value="Suche" onblur="if(this.value=='')this.value='Suche';" onfocus="if(this.value=='Suche')this.value='';" type="text">
+              </td>
+              <td class="searchtd" align="right" valign="middle" width="18">
+                <input class="searchbutton" name="GO" src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/lens_c160.gif" type="image">
+              </td>
+            </tr>
+          </tbody></table>
+	<input name="tx_indexedsearch[_sections]" value="0" type="hidden">
+	<input name="tx_indexedsearch[pointer]" value="0" type="hidden">
+	<input name="tx_indexedsearch[ext]" value="0" type="hidden">
+	<input name="tx_indexedsearch[lang]" value="0" type="hidden">
+        </form>
+
+	</div>
+	                      <!-- END search form -->
+                    </td>
+                  </tr>
+                </tbody></table>
+                <!-- END service-navigation and search -->
+              </td>
+              <td rowspan="3" class="transparent" height="100%" width="50"><img alt="" src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/transparent_01.gif" height="10" width="50">
+              </td>
+            </tr>
+            <!-- END navigation 1. row and service-navigation -->
+<tr><td class="color3-back" height="17" valign="middle" width="100%"><div class="mainnav"><a href="http://www.dz.ee.ethz.ch/en/our-range/services.html" class="mainnav-off">Services</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/our-range/background-information.html" class="mainnav-off">Background Information</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/our-range/teaching.html" class="mainnav-off">Teaching</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/our-range/regulations.html" class="mainnav-off">Regulations</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/our-range/student-projects.html" class="mainnav-off">Student Projects</a></div></td></tr><tr><td class="color2-back" height="17" valign="middle" width="100%"><div class="mainnav"><a href="http://www.dz.ee.ethz.ch/en/information/dz-wiki.html" class="mainnav-off">DZ Wiki</a> |&nbsp;<a href="http://www.dz.ee.ethz.ch/en/information/hdl-help.html" class="mainnav-on">HDL Help</a></div></td></tr>
+            <!-- END navigation 3. row -->
+          </tbody></table>
+          <!-- END picture and navigation -->
+        </td>
+      </tr>
+</tbody></table>
+    <!-- END header table -->
+    <!-- ############################################################################ -->
+
+    <!-- START content -->
+    <!-- START path -->
+    
+
+    
+    
+      
+        
+<!-- START content divs -->
+<!-- START path -->
+<div id="path-service">
+  <!-- START servicenav2 -->
+  
+    <div id="pageicons"><div class="servicenav2" id="servicenav2" style="visibility: visible; ">    <a href="javascript:printpage();" class="icon-print" onfocus="if(this.blur)this.blur();" onmouseover="changeText(1);" onmouseout="changeText(0);"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/icon_print_01.gif" alt="print" border="0"></a>
+<form method="get" class="icon-mail" action="en/information/hdl-help/vhdl-naming-conventions.html">    <input src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/icon_pdf_01.gif" title="pdf" alt="pdf" onmouseover="changeText(3);" onmouseout="changeText(0);" style="border:none;padding:0" type="image">
+    <input name="type" value="123" type="hidden">
+</form>    <span id="pageicons-text" style="visibility: visible; ">&nbsp;&nbsp;</span>
+</div></div>
+  <div class="pathline"><a href="http://www.ethz.ch/" title="ETH Zurich" target="_top" class="path">ETH Zurich</a>&nbsp;–&nbsp;<a href="http://www.ee.ethz.ch/" title="D-ITET" target="_top" class="path">D-ITET</a>&nbsp;–&nbsp;<a href="http://www.dz.ee.ethz.ch/en/general-information/about.html" onfocus="blurLink(this);" class="path">Microelectronics Design Center</a>&nbsp;–&nbsp;<a href="http://www.dz.ee.ethz.ch/en/information/hdl-help.html" onfocus="blurLink(this);" class="path">HDL Help</a>&nbsp;–&nbsp;VHDL Naming Conventions</div>
+  <div style="clear:both;"></div>
+  <!-- END servicenav2 -->
+  
+</div>
+<!-- END Path -->
+
+<!-- START content area -->
+
+<!-- START subnavigation 1. coloumn -->
+  <div class="navblock"><div class="subnav"><div class="subnav-lev1">HDL Help</div><div class="subnav-lev2"><a href="http://www.dz.ee.ethz.ch/en/information/hdl-help/vhdl-sources.html" onfocus="blurLink(this);" class="subnav-off">VHDL Sources</a></div><div class="subnav-lev2"><a href="http://www.dz.ee.ethz.ch/en/information/hdl-help/vhdl-examples.html" onfocus="blurLink(this);" class="subnav-off">VHDL Examples</a></div><div class="subnav-lev2"><a href="http://www.dz.ee.ethz.ch/en/information/hdl-help/verilog-examples.html" onfocus="blurLink(this);" class="subnav-off">Verilog Examples</a></div><div class="subnav-lev2"><a href="http://www.dz.ee.ethz.ch/en/information/hdl-help/vhdl-naming-conventions.html" onfocus="blurLink(this);" class="subnav-on">VHDL Naming Conventions</a></div><div class="subnav-lev2"><a href="http://www.dz.ee.ethz.ch/en/information/hdl-help/emacsvhdl-mode.html" onfocus="blurLink(this);" class="subnav-off">Emacs/VHDL Mode</a></div></div></div>
+<div class="clearright"></div>
+<!-- END subnavigation 1. coloumn -->
+
+<!-- START content 2./3. coloumn -->
+<div class="contentblock-3col" style="width:auto;" id="contentblock-3col">
+  <div id="languages"><span class="text-lang"><a href="http://www.dz.ee.ethz.ch/de/information/hdl-hilfe/vhdl-namenskonvention.html" class="languagelink">Deutsch</a></span><span class="text-lang lang-active">English</span></div>
+  <!-- START main heading -->
+  <h2 style="clear:right;">VHDL Naming Conventions</h2>
+  <!-- END main heading -->
+  
+ <div id="rightSidebar" class="float-right">
+   <!-- This is the right sidebar container.
+   Map it as OUTER as every element put here brings its own sourrounding div -->
+ </div>
+
+ <div id="c3051" class="csc-default"><ul><li>Use <i>meaningful names</i> for identifiers. Use the same names as in the block diagrams.</li><li>Names should indicate the purpose (e.g., <span class="detail">AdrCounter),</span> not the type (e.g., <span class="detail">UpCounter8)</span> of an object.</li><li>Use mixed casing and less than 15 characters for <i>identifiers</i>.</li><li>Use uniform casing for <i>reserved words</i>.</li><li>Indicate special properties or types of names by a <i>suffix</i>.</li><li>Use the <i>s</i>ame
+ name for a signal throughout all levels, or attach a prefix to the name
+ at higher levels which indicates the source/destination subcomponent of
+ the signal (e.g., <span class="detail">IdlexDO</span> -&gt; <span class="detail">CtrlIdlexD,</span> <span class="detail">InDataxDI</span> -&gt; <span class="detail">PipeInDataxD).</span></li><li><i>Rename</i> signals only where necessary (e.g., for changing the mode).</li></ul><h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Proposal</h3><ul><li>Names are composed of several 2-6 character <i>substrings</i>. <ul><li>The substrings have the first letter in <i>upper case</i> and the remaining letters in <i>lower case</i>.</li><li>The
+ substrings should be meaningful abbreviations of actions (e.g., Sel, 
+Inc, Add, Load) and objects (e.g., Reg, Mux, Data, Key).</li></ul> </li><li>The names should give an appropriate description of the <i>purpose</i> of the object.</li><li>Names of objects with a <i>hardware equivalent</i> (e.g., signals, entities/architectures, components) start with an upper-case letter.</li><li>Names of objects with <i>no hardware equivalent</i> (e.g., variables, types) and labels start with a lower-case letter.</li><li>No "_" is used (except constants), particularly in port names (is reserved character in the VITAL standard).</li></ul><h3>Constant Names</h3><ul><li>Use upper-case letters and "_" only (e.g., WIDTH, RAM_DEPTH, LFSR_INIT).</li><li>Avoid "_" in generics (synthesis attaches generic names to other names with "_" as delimiter).</li></ul><p class="bodytext"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/RTEmagicC_f67aa18be4.gif" alt="" border="0" height="1" width="1">
+</p>
+<h3>Signal Names</h3><ul><li>Start with an <i>upper-case</i> letter.</li><li>Have a suffix with syntax "x[CRSDTA][NP]?Z?B?[IO]?" ("[...]" denotes a choice, "?" means optional).</li><li>The suffix part "[CRSDTA]" indicates the class of the signal:</li></ul><p class="bodytext"></p><blockquote><p></p><table class="contenttable" bgcolor="#c0c0c0" border="0" cellpadding="0" cellspacing="0"> <tbody><tr> <td> <table class="contenttable" bgcolor="#c0c0c0" border="0" cellpadding="3" cellspacing="1"> <tbody><tr bgcolor="#5f6d9e"> <th>Class</th> <th>Char</th> <th>Example</th> <th>Description</th> </tr> <tr bgcolor="#eff3f7"> <td>clock</td> <td align="center"><tt>C</tt></td> <td><tt><span class="greenText">ClkxC</span><br></tt></td> <td>clock</td> </tr> <tr bgcolor="#eff3f7"> <td>reset</td> <td align="center"><tt>R</tt></td> <td><tt><span class="redText">RstxRB</span></tt></td> <td>asynchronous reset</td> </tr> <tr bgcolor="#eff3f7"> <td>control/status</td> <td align="center"><tt>S</tt></td> <td><tt><span class="blueText">SelInputxS, FullxS</span></tt></td> <td>control and status signals</td> </tr> <tr bgcolor="#eff3f7"> <td>data/address</td> <td align="center"><tt>D</tt></td> <td><tt>SamplexD, RamAdrxD</tt></td> <td>data and address signals</td> </tr> <tr bgcolor="#eff3f7"> <td>test</td> <td align="center"><tt>T</tt></td> <td><tt>ScanEnxT, RamIsolxT</tt></td> <td>test signals</td> </tr> <tr bgcolor="#eff3f7"> <td>asynchronous</td> <td align="center"><tt>A</tt></td> <td><tt>StrobexA</tt></td> <td>asynchronous signals</td> </tr> </tbody></table> </td> </tr> </tbody></table><p class="bodytext"></p></blockquote><p></p><ul><li>The suffix part "[NP]?" indicates next and present state for a signal (e.g., StatexDN / StatexDP, AddrCntxDN / AddrCntxDP)</li><li>The suffix part "Z?" indicates three-state signals</li><li>The suffix part "B?" indicates active low signals.</li><li>The suffix part "[IO]?" indicates input and output signals of an entity (e.g., CoeffxDI, FullxSO, ExtRamxDZIO)</li></ul><p class="bodytext"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/RTEmagicC_f67aa18be4.gif" alt="" border="0" height="1" width="1">
+</p>
+<h3><b>Variable Names</b></h3><ul><li>Start with a <i>lower-c</i>ase letter (e.g., temp, i, currentState).</li><li>Have <i>no suffix</i> (as opposed to signal names).</li></ul><p class="bodytext"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/RTEmagicC_f67aa18be4.gif" alt="" border="0" height="1" width="1">
+</p>
+<h3><b>Type Names</b></h3><ul><li>Have a suffix "Type" or a name that implies a type (e.g., stateType, stdLogicArray).</li></ul><p class="bodytext"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/RTEmagicC_f67aa18be4.gif" alt="" border="0" height="1" width="1">
+</p>
+<h3><b>Design Unit Names</b></h3>
+<p class="bodytext"></p><blockquote><b>Entity</b><br>Meaningful name describing the purpose of the circuit (e.g., DesEngine).
+<p></p>
+<p class="bodytext"><b>Architecture</b><br>According to the modeling 
+style used (i.e., Behavioral, Procedural, Dataflow, or Structural) or to
+ some specific architecture property.<br><br><b>Configuration</b><br>Name of the corresponding entity with suffix "Cfg" (e.g., DesEngineCfg).
+</p>
+<p class="bodytext"><b>Package</b><br>Name of the design (i.e., top-level entity) with suffix "Pkg" (e.g., DesEnginePkg).
+</p>
+<p class="bodytext"><b>Testbench (<i>entity</i>, <i>architecture</i>, <i>package</i>)</b><br>Name of corresponding entity with suffix "Tb" (e.g., DesEngineTb, DesEngineTbPkg).
+</p>
+<p class="bodytext"><b>Library (<i>package</i>)</b><br>Library name with suffix "Lib" (e.g, ArithLib).</p></blockquote>
+<p></p>
+<p class="bodytext"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/RTEmagicC_f67aa18be4.gif" alt="" border="0" height="1" width="1">
+</p>
+<h3><b>Labels</b></h3><ul><li>Give labels to all complex <i>concurrent statements</i>.</li><li>Use the following <i>suffices</i>:</li></ul><p class="bodytext"></p><blockquote><p></p><table class="contenttable" bgcolor="#c0c0c0" border="0" cellpadding="0" cellspacing="0"> <tbody><tr> <td> <table class="contenttable" bgcolor="#c0c0c0" border="0" cellpadding="3" cellspacing="1"> <tbody><tr bgcolor="#5f6d9e"> <th colspan="2">Construct</th> <th>Suffix</th> <th>Example</th> </tr> <tr bgcolor="#eff3f7"> <td rowspan="4" valign="top"><b>Process</b></td> <td>register</td> <td align="center"><tt>Reg</tt></td> <td><tt>stateReg</tt></td> </tr> <tr bgcolor="#eff3f7"> <td>counter</td> <td align="center"><tt>Cnt</tt></td> <td><tt>addressCnt</tt></td> </tr> <tr bgcolor="#eff3f7"> <td>combinational</td> <td align="center"><tt>Comb</tt></td> <td><tt>nextStateComb</tt></td> </tr> <tr bgcolor="#eff3f7"> <td>testbench</td> <td align="center"><tt>Tb</tt></td> <td><tt>stimulusTb</tt></td> </tr> <tr bgcolor="#eff3f7"> <td colspan="2"><b>Block</b></td> <td align="center"><tt>Blk</tt></td> <td><tt>inputPortBlk</tt></td> </tr> <tr bgcolor="#eff3f7"> <td colspan="2"><b>Instance</b></td> <td align="center"><tt>Inst</tt></td> <td><tt>datapathInst</tt></td> </tr> <tr bgcolor="#eff3f7"> <td colspan="2"><b>Generate</b> statement</td> <td align="center"><tt>Gen</tt></td> <td><tt>reduceAndGen</tt></td> </tr> </tbody></table> </td> </tr> </tbody></table><p class="bodytext"></p></blockquote>
+<p></p>
+<h3><b>File Names</b></h3><ul><li>Have the same name as the contained design unit (possibly with the first or all letters in lower case).</li><li>Have file suffix ".vhd" or ".vhdl".</li></ul></div> 
+
+  <!-- START text box floating right -->
+  <!-- show column depending on layout switch -->
+  
+    
+          
+  
+
+  <!-- END section main content -->
+</div>
+<!-- END content -->
+
+
+<!-- START footer -->
+    <!-- ############################################################################ --><!-- START footer -->
+    <div class="clearboth">
+      &nbsp;
+    </div>
+    <!-- note for netscape 4.x users -->
+    <p id="ns4note" class="note">
+      <strong><font size="+1">Wichtiger Hinweis:</font><br>
+        Diese Website wird in älteren Versionen von Netscape ohne
+        graphische Elemente dargestellt. Die Funktionalität der
+        Website ist aber trotzdem gewährleistet. Wenn Sie diese
+        Website regelmässig benutzen, empfehlen wir Ihnen, auf
+        Ihrem Computer einen aktuellen Browser zu installieren. Weitere
+        Informationen finden Sie auf<br>
+        <a href="http://www.cd.ethz.ch/services/web/">folgender
+        Seite</a>.<br>
+        <br>
+        <font size="+1">Important Note:</font><br>
+        The content in this site is accessible to any browser or
+        Internet device, however, some graphics will display correctly
+        only in the newer versions of Netscape. To get the most out of
+        our site we suggest you upgrade to a newer browser.<br>
+        <a href="http://www.cd.ethz.ch/services/web/">More
+        information</a></strong>
+    </p>
+
+    <!-- START footer -->
+    <div class="footerblock"><div class="unitlogo"><a href="http://www.ee.ethz.ch/" target="_top"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/logo_itet_01.gif" alt="" border="0" height="53" width="154"></a><br></div><div class="footerline"><div class="footertext">© 2011 ETH Zurich&nbsp;|&nbsp;<a href="http://www.dz.ee.ethz.ch/en/general-information/about/staff.html" target="_top" class="path">Imprint</a>&nbsp;|&nbsp;<a href="http://www.ethz.ch/disclaimer/index_EN" title="Disclaimer" target="_top" class="path">Disclaimer</a>&nbsp;|&nbsp;25.10.2011</div><div class="footerwologo"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/f4166fd7f1.png" alt="" border="0" height="7" width="58"><a href="http://www.typo3.org/" target="_top"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/373201e456.png" alt="" border="0" height="7" width="34"></a></div></div></div>
+<!-- END footer -->
+
+<!-- START page top icon -->
+<div id="pagetop"><span><a href="http://www.dz.ee.ethz.ch/en/information/hdl-help/vhdl-naming-conventions.html#top" title="Top"><img src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/top_c160.gif" alt="Top" title="Top" border="0" height="33" width="13"></a></span></div>
+<!-- END page top icon -->
+    
+</div>
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.ee.ethz.ch/" : "http://piwik.ee.ethz.ch/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="ETH%20-%20D-ITET%20-%C2%A0ITET%20DZ%C2%A0%E2%80%93%C2%A0Information%C2%A0%E2%80%93%C2%A0HDL%20Help%C2%A0%E2%80%93%C2%A0VHDL%20Naming%20Conventions_files/piwik.js" type="text/javascript"></script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 8);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik.ee.ethz.ch/piwik.php?idsite=8" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+
+
+
+</body></html>

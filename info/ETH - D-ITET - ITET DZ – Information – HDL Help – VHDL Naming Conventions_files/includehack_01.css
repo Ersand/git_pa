@@ -1,0 +1,4 @@
+.logo-bg { background-image: url(/fileadmin/ethcd/images/head_bg_logo_home_c000.jpg); background-repeat: no-repeat; }
+.identity-image { background-image: url(/fileadmin/ethcd/images/head_bg_home_c000.jpg); background-repeat: repeat; }
+.mainnav, .screenhead, .color5-back, .color4-back, .color3-back, .color2-back, .color1-back,  .servicenav, .transparent {background-image: url(/fileadmin/ethcd/icons_site/transparent.gif); }
+div.navblock, .margins div.contentblock-1col { margin-bottom:165px; }

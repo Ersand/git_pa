@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\bscuser\Desktop\git_pa\simulation\qsim
+vproc
+Z1 Inab<JNjnQR`?Xm^bD3cV;2
+Z2 VEbIY;L>O4E=^PZIZDOeAM2
+Z3 dC:\Users\bscuser\Desktop\git_pa\simulation\qsim
+Z4 w1416057788
+Z5 8proc.vo
+Z6 Fproc.vo
+L0 32
+Z7 OV;L;10.1e;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 <;[A=W@]7S4aPAD?fJ_;F3
+!s85 0
+Z10 !s108 1416057790.048000
+Z11 !s107 proc.vo|
+Z12 !s90 -work|work|proc.vo|
+!s101 -O0
+vproc_vlg_vec_tst
+!i10b 1
+!s100 5QmKf5BJ`akS7ZzBX@D=j1
+I=AMP104HgI]?4VIAX8MI[0
+V4ebf^jK0IN0fbcPT@AQbo0
+R3
+w1416057787
+8test_pc.vwf.vt
+Ftest_pc.vwf.vt
+L0 30
+R7
+r1
+!s85 0
+31
+!s108 1416057790.502000
+!s107 test_pc.vwf.vt|
+!s90 -work|work|test_pc.vwf.vt|
+!s101 -O0
+R8
